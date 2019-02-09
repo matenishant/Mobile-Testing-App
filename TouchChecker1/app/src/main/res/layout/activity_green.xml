@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#008000"
+    tools:context="nishant.com.touchchecker.Green"
+    android:id="@+id/R2"
+    >
+
+
+
+    <TextView
+        android:id="@+id/textBack1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="Please tap on screen to go back!!"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</RelativeLayout>

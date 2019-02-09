@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+
+   android:background="@drawable/bg3"
+
+    tools:context="nishant.com.touchchecker.MainActivity">
+
+<TableRow
+    android:id="@+id/tableRow1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+
+    android:paddingTop="5dp">
+
+    <Button
+
+        android:id="@+id/buttonRed"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+
+        android:background="#FF0000"
+
+
+        android:text="Red"
+
+        tools:text="Red" />
+
+    <Button
+
+        android:id="@+id/buttonGreen"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/buttonRed"
+        android:background="#0d4f02"
+        android:layout_weight="1"
+
+        android:text="Green"
+        tools:text="Green" />
+
+    <Button
+        android:id="@+id/buttonBlue"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/buttonGreen"
+            android:layout_weight="1"
+        android:background="#0000FF"
+        android:layout_marginRight="10dp"
+
+        android:gravity="center"
+        android:text="Blue"
+        tools:text="Blue" />
+
+</TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp">
+
+
+        <Button
+            android:id="@+id/buttonSys"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="20sp"
+            android:drawablePadding="-25sp"
+            android:layout_alignStart="@+id/buttonRed"
+            android:layout_below="@+id/buttonRed"
+            android:background="@drawable/radial_background"
+            android:drawableTop="@drawable/syst"
+
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:text="Sys Info"
+            android:elevation="2dp"
+
+            tools:text="System Info" />
+
+        <Button
+            android:id="@+id/buttonVibrate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttoncamera"
+
+            android:layout_alignStart="@+id/buttonGreen"
+            android:background="@drawable/radial_background"
+            android:paddingTop="20sp"
+            android:drawablePadding="-25sp"
+            android:layout_weight="1"
+
+            android:text="Vibration"
+            android:drawableTop="@drawable/vibrate"
+            tools:text="Vibration" />
+
+        <Button
+            android:id="@+id/buttonDim"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonBlue"
+            android:layout_alignTop="@+id/buttonVibrate"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:paddingTop="20sp"
+            android:drawablePadding="-25sp"
+            android:drawableTop="@drawable/dim"
+            android:text="Dimming"
+            android:background="@drawable/radial_background"
+            tools:text="Dimming" />
+
+
+    </TableRow>
+
+
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp">
+
+        <Button
+            android:id="@+id/buttoncamera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/buttonReceiver"
+            android:layout_alignStart="@+id/buttonReceiver"
+            android:layout_below="@+id/buttonReceiver"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/radial_background"
+            android:paddingTop="20sp"
+            android:drawablePadding="-25sp"
+            android:drawableTop="@drawable/camera"
+            android:text="Camera"
+            tools:text="Camera" />
+
+        <Button
+            android:id="@+id/buttonSen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonSpeaker"
+            android:layout_alignStart="@+id/buttonGreen"
+            android:text="Sensor"
+            android:paddingTop="20sp"
+            android:drawablePadding="-25sp"
+            android:drawableTop="@drawable/sensor"
+            android:layout_weight="1"
+            android:background="@drawable/radial_background"
+            tools:text="Sensor" />
+
+        <Button
+            android:id="@+id/buttonTch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/buttonDim"
+            android:layout_alignTop="@+id/buttonSen"
+            android:layout_marginEnd="10dp"
+            android:text="Touch"
+            android:layout_weight="1"
+            android:paddingTop="20sp"
+            android:drawablePadding="-25sp"
+            android:drawableTop="@drawable/touch"
+            android:background="@drawable/radial_background"
+            tools:text="Touch" />
+
+
+    </TableRow>
+
+
+
+
+    <TableRow
+    android:id="@+id/tableRow4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingTop="5dp">
+
+    <Button
+        android:id="@+id/buttonSpeaker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttoncamera"
+        android:layout_alignStart="@+id/buttoncamera"
+        android:layout_below="@+id/buttoncamera"
+        android:layout_marginStart="10dp"
+        android:text="Speaker"
+        android:paddingTop="20sp"
+        android:drawablePadding="-25sp"
+android:drawableTop="@drawable/speaker"
+        android:layout_weight="1"
+        android:background="@drawable/radial_background"
+        tools:text="Speaker" />
+
+        <ToggleButton
+            android:id="@+id/buttonWifi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/buttonSen"
+            android:layout_alignStart="@+id/buttonSen"
+            android:layout_alignTop="@+id/buttonSpeaker"
+            android:background="@drawable/radial_background"
+            android:layout_weight="1"
+            android:paddingTop="20sp"
+            android:drawablePadding="-25sp"
+            android:drawableTop="@drawable/wifi_state"
+            android:checked="false"
+            android:textOff="WiFi OFF"
+            android:textOn="WiFi ON"
+
+            />
+
+        <Button
+        android:id="@+id/buttontsub"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/buttonTch"
+        android:layout_alignTop="@+id/buttonWifi"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+            android:paddingTop="20sp"
+            android:drawablePadding="-25sp"
+            android:drawableTop="@drawable/subkey"
+            android:background="@drawable/radial_background"
+        android:text="Sub key "
+        tools:text="Sub key" />
+
+
+</TableRow>
+
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp">
+
+
+
+        <Button
+            android:id="@+id/buttonThumb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/buttonSpeaker"
+            android:layout_alignStart="@+id/buttonSpeaker"
+            android:layout_below="@+id/buttonSpeaker"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:paddingTop="20sp"
+            android:drawablePadding="-25sp"
+
+            android:drawableTop="@drawable/fingerprint"
+            android:background="@drawable/radial_background"
+            android:text="Thumb"
+            tools:text="Thumb" />
+
+        <Button
+            android:id="@+id/buttonFlash"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Flash"
+            android:layout_weight="1"
+            android:paddingTop="20sp"
+            android:drawablePadding="-25sp"
+            android:drawableTop="@drawable/flash"
+
+            android:background="@drawable/radial_background"
+            tools:text="Flash" />
+
+
+        <Button
+            android:id="@+id/buttonRecord"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="10dp"
+            android:text="Record"
+            android:layout_weight="1"
+            android:paddingTop="20sp"
+            android:drawablePadding="-25sp"
+            android:drawableTop="@drawable/record"
+            android:background="@drawable/radial_background"
+            tools:text="Record"
+            />
+
+
+
+
+
+
+
+
+
+    </TableRow>
+
+
+
+
+
+
+</TableLayout>

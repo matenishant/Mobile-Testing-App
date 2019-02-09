@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nishant.com.touchchecker.ThumbImpression">
+
+
+    <TextView
+        android:id="@+id/textViewThumb"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="34dp"
+        android:gravity="center"
+        android:text="Touch senser"
+        android:textSize="26sp" />
+
+    <ImageView
+        android:id="@+id/imageViewThumb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewThumb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="116dp"
+        app:srcCompat="@drawable/fingerprint_1" />
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="@string/note"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TouchChecker</string>
+    <string name="note">(Fingerprint sign in makes your app login much faster. Your device should have at least one fingerprint registered in device settings)</string>
+
+    <string name="note1">Touch on Image :)</string>
+
+
+</resources>
